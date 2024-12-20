@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>JTGeats</title>
+  </head>
+
+  <body>
+    <div id="main-container">
+      <!-- header -->
+      <header id="header">
+        <div id="title">
+          <img src="icons/Logo.svg" alt="JTGeats" />
+        </div>
+        <div class="nav-container">
+          <ul class="nav-links">
+            <li class="nav-items"><a href="#">Home</a></li>
+            <li class="nav-items"><a href="#">About</a></li>
+            <li class="nav-items"><a href="#">Menu</a></li>
+            <li class="nav-items"><a href="#">Blog</a></li>
+            <li class="nav-items"><a href="#">Contact</a></li>
+          </ul>
+          <img class="img1" src="icons/Search.svg" alt="search item" />
+          <div>
+            <img
+              class="img2"
+              src="icons/Cart.svg"
+              alt="add to cart"
+              onclick="openModal()"
+            />
+            <div class="alert"></div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Landing section -->
+      <div id="middle">
+        <div id="heading">
+          <h1 class="allh1">Authentic Home food in India</h1>
+          <p>
+            JTGeats is a courier service in which authentic home cook food is
+            delivered to a customer.
+          </p>
+          <form action="#" class="searchbar">
+            <input type="text" placeholder="Search food you love" />
+            <button type="submit">Search</button>
+          </form>
+        </div>
+        <div id="cooking">
+          <img src="icons/cooking.svg" alt="Cooking" class="img3" />
+        </div>
+      </div>
+
+      <!-- home kitchen -->
+      <div id="middle2">
+        <h1 id="heading2">Home Kitchen</h1>
+      </div>
+      <div id="middle3"></div>
+      <!-- ---------------- SLIDER ----------------- -->
+      <div id="middle4">
+        <div class="middle41">
+          <h1>Popular Items</h1>
+        </div>
+        <div class="scroller">
+          <img
+            src="./icons/play.svg"
+            alt="reverse"
+            id="btn-rev"
+            onclick="reverse()"
+          />
+          <div class="container"></div>
+          <img
+            src="./icons/play.svg"
+            alt="forward"
+            id="btn-for"
+            onclick="forward()"
+          />
+        </div>
+        <div class="middle43">
+          <button type="submit" onclick="openModal2()">Request a Dish</button>
+        </div>
+      </div>
+
+      <div id="middle5">
+        <div class="middle51">
+          <p>We are providing the best</p>
+          <p>home-cooked food delivery service.</p>
+        </div>
+        <div class="middle52">
+          <p>
+            Away from home and craving tasty homemade recipes? Choose from our
+            selection of delicious home-cooked dishes.
+          </p>
+        </div>
+        <div class="middle53">
+          <video
+            src="video/food_cooking.mp4"
+            class="cooking-vid"
+            onclick="playPauseVideo()"
+          >
+            Video format not supported
+          </video>
+          <div class="play-pause-effect" onclick="playPauseVideo()"></div>
+        </div>
+        <div class="green-color"></div>
+      </div>
+
+      <div id="middle6">
+        <div class="part1">
+          <div class="subpart1">
+            <div class="question">
+              <p>Do you have a question<br />or want to become a seller?</p>
+              <p class="fill">
+                Fill this form our manager will contact you next 48 hours.
+              </p>
+            </div>
+            <div class="forms">
+              <form action="#">
+                <div class="input1">
+                  <input
+                    type="text"
+                    placeholder="Your name"
+                    class="inner-input1"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Your e-mail"
+                    class="inner-input2"
+                  />
+                </div>
+                <div class="input2">
+                  <input type="text" placeholder="Your nessage" />
+                </div>
+                <div class="butt">
+                  <button type="submit">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="part2">
+          <img src="icons/Food delivery illustration.svg" alt="food-delivery" />
+        </div>
+      </div>
+
+      <!-- --------------------- section------------------------ -->
+      <footer>
+        <nav id="footer">
+          <div id="ftitle">
+            <img src="icons/Logo.svg" alt="JTGeats" />
+          </div>
+          <div class="nav-container">
+            <ul class="nav-links">
+              <li class="nav-items"><a href="#">Home</a></li>
+              <li class="nav-items"><a href="#">About</a></li>
+              <li class="nav-items"><a href="#">Menu</a></li>
+              <li class="nav-items"><a href="#">Blog</a></li>
+              <li class="nav-items"><a href="#">Contact</a></li>
+            </ul>
+            <img class="img1" src="icons/Facebook.svg" alt="facebook" />
+            <div>
+              <img class="img2" src="icons/instagram.svg" alt="instagram" />
+            </div>
+          </div>
+        </nav>
+        <hr />
+      </footer>
+    </div>
+    <!-- add to cart modal -->
+    <div class="background-blured hide1">
+      <div class="add-to-cart-popup">
+        <img src="icons/Cart.svg" />
+        <h1>Cart is Empty</h1>
+        <p>Add some item to the cart to checkout</p>
+        <button type="submit" onclick="closeModal()">Back to Menu</button>
+      </div>
+    </div>
+
+    <!-- request a dish -->
+    <div class="background-blured hide2">
+      <div class="request-a-dish">
+        <div class="request-form">
+          <div class="inner1">
+            <h1>Request a Dish</h1>
+          </div>
+          <div class="inner2">
+            <label for="name">Name*</label><br />
+            <input
+              type="text"
+              name="Name"
+              placeholder="Enter Name of the dish"
+              id="name"
+            /><br /><br /><br />
+            <label for="url">Upload an image</label><br />
+            <input
+              type="url"
+              name="url"
+              placeholder="Paste a URL"
+              id="upload"
+            />
+          </div>
+          <div class="inner3">
+            <div id="cancel">
+              <button type="submit" onclick="closeModal2()">Cancel</button>
+            </div>
+            <div id="submit">
+              <button type="submit" onclick="closeModal2()">
+                Submit Request
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <!-- script for play pause video -->
+  <script src="js/video.js"></script>
+
+  <!-- script for Add to cart modal -->
+  <script src="js/cart.js"></script>
+
+  <!-- script for request a dish modal -->
+  <script src="js/request-dish.js"></script>
+
+  <!-- script for carousel -->
+  <script src="js/carousel.js"></script>
+
+  <script src="js/repeated-code.js"></script>
+</html>
