@@ -5,7 +5,7 @@ JTGeats is a web-based platform that connects customers with authentic home-cook
 ## Features
 
 ### 🏠 Home Page
-- Hero section with search functionality
+- Search functionality
 - Featured home kitchen items display
 - Popular items carousel/slider
 - Video demonstration section
@@ -23,7 +23,6 @@ JTGeats is a web-based platform that connects customers with authentic home-cook
   - Secondary Blue: #2EBF91
   - Accent Yellow: #F3BA00
   - Background White: #F0FAF7
-- Responsive navigation bar
 - Modern card design with hover effects
 - Custom video player controls
 - Interactive modals
@@ -151,7 +150,6 @@ JTGeats/
 #### Contact Section
 - Two-column layout
 - Form with input validation
-- Responsive design
 - Submit button with hover effects
 
 ## Setup and Installation
@@ -161,12 +159,7 @@ JTGeats/
 git clone https://github.com/shahidusmaniii/JTGeatsAssignment.git
 ```
 
-2. Open the project folder
-```bash
-cd jtgeats
-```
-
-3. Open `index.html` in your preferred browser
+2. Open `index.html` in your preferred browser
 
 ## Browser Compatibility
 
